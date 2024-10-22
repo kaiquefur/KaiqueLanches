@@ -1,0 +1,140 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fundo claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2; /* Azul suave */
+    color: white; /* Texto branco para contraste */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.title { 
+    font-family: 'Pacifico', cursive; /* Aplicando a nova fonte apenas ao título */
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+section {
+    flex: 1;
+}
+
+/* Ajuste na seção de produtos */
+#products-section {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do Formulário */
+#signup-section {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px; /* Largura reduzida para a seção de cadastro */
+}
+
+#cart-section {
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #4a90e2; /* Azul suave */
+    margin-bottom: 10px;
+}
+
+/* Estilo da Lista de Produtos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustando o tamanho mínimo */
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fafafa; /* Cor suave para os produtos */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.products-grid h3 {
+    color: #4a90e2; /* Azul suave */
+    margin-bottom: 10px;
+}
+
+.products-grid p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Estilo dos Inputs */
+.input-group {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #218838; /* Verde escuro ao passar o mouse */
+}
+
+/* Seção do Total da Compra */
+#total-price {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Muda para coluna em telas menores */
+    }
+    #signup-section {
+        width: 100%; /* Largura total para telas menores */
+    }
+}

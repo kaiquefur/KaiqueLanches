@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaique Lanches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kaique Lanches</h1>
+        <p>Seu lugar para deliciosos lanches!</p>
+    </header>
+    <div class="container">
+        <section id="products-section">
+            <h2>Produtos</h2>
+            <div class="products-grid">
+                <div class="product-item">
+                    <h3>X-Burguer</h3>
+                    <p>Delicioso hambúrguer com queijo e bacon.</p>
+                    <p>R$ 15,00</p>
+                    <button class="btn">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <h3>X-Salada</h3>
+                    <p>Hambúrguer com salada fresca e maionese.</p>
+                    <p>R$ 12,00</p>
+                    <button class="btn">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <h3>Batata Frita</h3>
+                    <p>Porção de batatas crocantes.</p>
+                    <p>R$ 8,00</p>
+                    <button class="btn">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <h3>Refrigerante</h3>
+                    <p>Bebida gelada para acompanhar seu lanche.</p>
+                    <p>R$ 5,00</p>
+                    <button class="btn">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <h3>Pastel</h3>
+                    <p>Pastel frito recheado com carne.</p>
+                    <p>R$ 6,00</p>
+                    <button class="btn">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <h3>Pizza Slice</h3>
+                    <p>Deliciosa fatia de pizza com queijo.</p>
+                    <p>R$ 10,00</p>
+                    <button class="btn">Comprar</button>
+                </div>
+            </div>
+        </section>
+        <section id="signup-section">
+            <h2>Cadastro</h2>
+            <div id="cart-section">
+                <p id="total-price">Total: R$ 0,00</p>
+            </div>
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
